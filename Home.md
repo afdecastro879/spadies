@@ -27,11 +27,11 @@ You can also highlight snippets of text (we use the excellent [Pygments][] libra
 Here's an example of some Python code:
 
 ```
-#!python
+#!java
 
-def wiki_rocks(text):
-    formatter = lambda t: "funky"+t
-    return formatter(text)
+private int darCorreo(){
+    return 0;
+}
 ```
 
 
