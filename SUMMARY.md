@@ -1,6 +1,6 @@
 1. [Introducción](intro.md)
 2. Configuración
-	+ [VPN](chapther2/configuracion/vpn.md)
+	+ [VPN](chapter2/configuracion/vpn.md)
 	+ Integración continua
 	+ Base de datos Oracle
 	+ Weblogic
