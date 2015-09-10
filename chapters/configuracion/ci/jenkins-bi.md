@@ -5,7 +5,7 @@ A continuación se presenta el procedimiento para enlazar Bitbucket con Jenkins, 
 
 En la página principal de jenkins dar clic en Administrar Jenkins, luego Administrar Plugins. Dar clic en la pestaña todos los plugins.
 
-[Jenkins Paso 1](../../../img/jenkins/jenkins_1stp.png)
+![Jenkins Paso 1](../../../img/jenkins/jenkins_1stp.png)
 
 En la barra de búsqueda escribir Bitbucket Plugin, seleccionar el plugin correspondiente y hacer clic en Descargar ahora e instalar después de reiniciar.
 
@@ -13,7 +13,7 @@ En la barra de búsqueda escribir Bitbucket Plugin, seleccionar el plugin corresp
 
 Entrar a Bitbucket > Manage Account y en el grupo Security seleccionar SSH Keys.
 
-[Jenkins Paso 2](../../../img/jenkins/jenkins_2stp.png)
+![Jenkins Paso 2](../../../img/jenkins/jenkins_2stp.png)
 
 Entrar a la máquina donde se encuentra instalado jenkins y por línea de comando:
 
@@ -29,7 +29,7 @@ Copiar la llave y dar clic en Add Key en Bitbucket Darle un nombre y copiar la l
 
 Entrar al repositorio, Dar clic en Settings > Services
 
-[Jenkins Paso 3](../../../img/jenkins/jenkins_3stp.png)
+![Jenkins Paso 3](../../../img/jenkins/jenkins_3stp.png)
 
 Agregar el servicio `POST` con <jenkins_host>:<jenkins_port>/bitbucket-hook.
 
