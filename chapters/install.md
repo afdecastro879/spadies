@@ -2,6 +2,15 @@
 Este capítulo muestra los procesos de instalación y configuración de todos los ambientes utilizados para el desarrollo del proyecto SPADIES 3.0.
 
 Para este capítulo se supone que ya se ha instalado Java Development Kit en su versión 1.8.0_45 o mayor, y que los ejecutables de java se encuentra en el PATH de las variables de entorno.
+
+# Contenido
++ [VPN](configuracion/vpn.md)
++ [Servidor Weblogic](configuracion/wl.md)
++ [Base de datos Oracle](configuracion/odb.md)
++ [Ambiente Integración continua](configuracion/ci.md)
++ [Creación del proyecto en el ambiente CI](configuracion/project.md)
++ [Ambiente de Desarrollo](configuracion/devenv.md)
+
 ## Versiones
 A continuación encontrará el detalle de las versiones utilizadas de cada herramienta utilizada para todo el proceso de desarrollo:
 
