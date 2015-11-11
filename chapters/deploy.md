@@ -5,8 +5,8 @@ Este capítulo contiene las instrucciones para realizar el despliegue del aplica
 1. Debe haberse realizado la configuración de la base de datos de SPADIES.
 2. Debe tener los archivos .WAR (FrontEnd) y .EAR (BackEnd) generados a partir del código de ambos proyectos.
 ## Instrucciones ##
-1. Ingresar a la consola de WebLogic que se encuentra en la URL ´http://localhost:7001/console´
-2. Dirigirse a la vista de Despliegues en el menú ´Estructura de Dominio´ y hacer clic en el botón ´Instalar´:
+1. Ingresar a la consola de WebLogic que se encuentra en la URL `http://localhost:7001/console`
+2. Dirigirse a la vista de Despliegues en el menú `Estructura de Dominio` y hacer clic en el botón `Instalar`:
 ![001.PNG](https://bitbucket.org/repo/RpRKkd/images/2013536604-001.PNG)
-3. En ´Ruta de Acceso´ seleccionar la ruta donde se encuentra el WAR y el WAR:
+3. En `Ruta de Acceso` seleccionar la ruta donde se encuentra el WAR y el WAR:
 ![002.PNG](https://bitbucket.org/repo/RpRKkd/images/2943286910-002.PNG)
