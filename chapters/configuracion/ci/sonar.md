@@ -1,37 +1,37 @@
-# Instalación del servidor de SonarQube
+# Instalaciï¿½n del servidor de SonarQube
 
-A continuación se presenta el procedimiento para la instalación de SonarQube en linux CentOS 6.5
+A continuaciï¿½n se presenta el procedimiento para la instalaciï¿½n de SonarQube en linux CentOS 6.5
 
 ## Linux CentOS 6.5
 
-Para la instalación de SonarQube se requiere de una base de datos. Dentro del proceso de integración continua para el proyecto SPADIES se utilizará una base de datos MySQL para este fin.
+Para la instalaciï¿½n de SonarQube se requiere de una base de datos. Dentro del proceso de integraciï¿½n continua para el proyecto SPADIES se utilizarï¿½ una base de datos MySQL para este fin.
 
 ### MySQL
-Ejecutar a través de línea de comandos:
+Ejecutar a travï¿½s de lï¿½nea de comandos:
 
 ```
 #!bash
 su                                          //Entrar como usuario root
-yum install mysql-server                    //Instalación del servidor de MySQL
+yum install mysql-server                    //Instalaciï¿½n del servidor de MySQL
 /sbin/chkconfig mysqld on                   //Activar el servicio mysqld
 service mysqld start                        //Dar inicio al servidor de MySQL
 mysqladmin -u root password 'mypassword'    //Crear password para el usuario root de MySQL
 adduser sonar                               //Agregar un usuario para sonar
-passwd sonar                                //Agregar una contraseña para el usuario sonar
+passwd sonar                                //Agregar una contraseï¿½a para el usuario sonar
 ```
 
 ### SonarQube
-Ejecutar a través de línea de comandos:
+Ejecutar a travï¿½s de lï¿½nea de comandos:
 
 ```
 #!bash
 sudo wget -O /etc/yum.repos.d/sonar.repo http://downloads.sourceforge.net/project/sonar-pkg/rpm/sonar.repo  //Agregar el repositorio de sonar
-yum install sonar                           //Instalar sonar a través de yum
+yum install sonar                           //Instalar sonar a travï¿½s de yum
 ```
 
 ### Crear Base de datos y usuarios para sonar
-Es necesario generar las bases de datos y el usuario a través del cual se conectará sonarqube.
-Para esto, se debe ingresar a la consola de mysql a través de:
+Es necesario generar las bases de datos y el usuario a travï¿½s del cual se conectarï¿½ sonarqube.
+Para esto, se debe ingresar a la consola de mysql a travï¿½s de:
 ```
 #!bash
 mysql -u {mysql-user} -p {mysql-password}   // Para este caso particular entrar como root: mysql -u root -p mypassword
@@ -48,14 +48,14 @@ FLUSH PRIVILEGES;
 ```
 
 ### Configuraciones de sonar:
-Una vez creada la Base de datos y el usuario en necesario acceder a la configuración de sonar y agregar estos datos. Por defecto esta configuración está en `/opt/sonar/conf/conf.properties`
+Una vez creada la Base de datos y el usuario en necesario acceder a la configuraciï¿½n de sonar y agregar estos datos. Por defecto esta configuraciï¿½n estï¿½ en `/opt/sonar/conf/conf.properties`
 
 ```
 #!bash
 vi /opt/sonar/conf/conf.properties
 ```
 
-Descomentar las líneas correspondientes. En este caso se tiene en cuenta que la base de datos y el usuario creado son los mismos que vienen por defecto en el archivo de configuración:
+Descomentar las lï¿½neas correspondientes. En este caso se tiene en cuenta que la base de datos y el usuario creado son los mismos que vienen por defecto en el archivo de configuraciï¿½n:
 
 ```
 #!bash
@@ -80,7 +80,7 @@ sonar.jdbc.password=sonar
 ```
 ### Asegurando Sonar
 
-Se puede iniciar el servicio de sonar a través de:
+Se puede iniciar el servicio de sonar a travï¿½s de:
 
 ```
 #!bash
@@ -88,13 +88,13 @@ sudo service sonar start
 ```
 
 Una vez iniciado el servicio se deben configurar las opciones de seguridad:
-+ Entrar a través del browser a http://localhost:9000.
-+ Iniciar sesión con la cuenta admin con contraseña admin.
-+ Cambiar la contraseña entrando a “Administrator” > “My Account”
-+ Desactivar el acceso anónimo a través de “Settings” > “Configuration” > “Security” seleccionando True en “Force user authentication”
++ Entrar a travï¿½s del browser a http://localhost:9000.
++ Iniciar sesiï¿½n con la cuenta admin con contraseï¿½a admin.
++ Cambiar la contraseï¿½a entrando a ï¿½Administratorï¿½ > ï¿½My Accountï¿½
++ Desactivar el acceso anï¿½nimo a travï¿½s de ï¿½Settingsï¿½ > ï¿½Configurationï¿½ > ï¿½Securityï¿½ seleccionando True en ï¿½Force user authenticationï¿½
 
-### Instalación de Sonar Runner
-Para enviar un análisis de código se requiere del SonarRunner. Para esto:
+### Instalaciï¿½n de Sonar Runner
+Para enviar un anï¿½lisis de cï¿½digo se requiere del SonarRunner. Para esto:
 
 ```
 #!bash
@@ -106,14 +106,14 @@ sudo ln -s sonar-runner-2.2.2 sonar-runner              //Renombrar el fuente
 //Crear un script para agregar las variables de entorno de sonar-runner al inicio del OS
 sudo echo -e '#!/bin/bash\nexport SONAR_RUNNER_HOME=/opt/sonar-runner\nexport PATH=$PATH:$SONAR_RUNNER_HOME/bin' > /etc/profile.d/sonar-runner.sh
 
-export SONAR_RUNNER_HOME=/opt/sonar-runner              //Exportar las variables de entorno para la sesión actual
+export SONAR_RUNNER_HOME=/opt/sonar-runner              //Exportar las variables de entorno para la sesiï¿½n actual
 export PATH=$PATH:$SONAR_RUNNER_HOME/bin
 
-sonar-runner -v                                         //Probar la correcta instalación del sonnar-runner
+sonar-runner -v                                         //Probar la correcta instalaciï¿½n del sonnar-runner
 ```
 
 ### Sonar con Maven
-Para que sonar pueda ser llamado a través de maven se requiere de agregar un profile a la configuración de Maven:
+Para que sonar pueda ser llamado a travï¿½s de maven se requiere de agregar un profile a la configuraciï¿½n de Maven:
 
 ```
 #!bash
@@ -131,7 +131,6 @@ vi /opt/maven/settings.xml
             <sonar.jdbc.password>sonar</sonar.jdbc.password>
             <sonar.login>admin</sonar.login>
             <sonar.password>adminPassword</sonar.password>
-
             <sonar.host.url>
               http://localhost:9000
             </sonar.host.url>

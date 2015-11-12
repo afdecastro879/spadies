@@ -2,6 +2,7 @@
 	+ [VPN](chapters/configuracion/vpn.md)
 	+ [Servidor Weblogic](chapters/configuracion/wl.md)
 	+ [Base de datos Oracle](chapters/configuracion/odb.md)
+	+ [OpenLdap](chapters/configuracion/openldap.md)
 	+ [Ambiente Integración continua](chapters/configuracion/ci.md)
 	    + Instalación de Git
 	    + Instalación de Maven
@@ -15,7 +16,14 @@
 	    	+ Dependencias
 	    	+ Sonar
 			+ WebLogic
+        + OpenLdap
 	    + Base de datos
+    + [Puesta en Producción](chapters/configuracion/production.md)
+        + Instalación del ambiente
+        + Compilación
+        + Despliegue
+            + Consola de Administración WebLogic
+            + Maven
 2. Código Fuente
 	+ Java Doc
 3. Manuales
