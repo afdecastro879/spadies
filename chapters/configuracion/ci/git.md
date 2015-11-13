@@ -1,14 +1,14 @@
-# Instalación de Git
-A continuación se presenta el procedimiento para la instalación de git en linux CentOS 6.5 y Windows.
+# InstalaciÃ³n de Git
+A continuaciÃ³n se presenta el procedimiento para la instalaciÃ³n de git en linux CentOS 6.5 y Windows.
 
 ## Linux CentOS
-Ejecutar por línea de comandos:
+Ejecutar por lÃ­nea de comandos:
 ```
 #!bash
 yum install git
 
 ```
-Esto instalará la última versión de git estable.
+Esto instalarÃ¡ la Ãºltima versiÃ³n de git estable.
 
 ## Windows
 Descargar el ejecutable para windows en el siguiente [enlace](https://git-scm.com/downloads). Ejecutar el descargable y seleccionar las siguientes opciones:

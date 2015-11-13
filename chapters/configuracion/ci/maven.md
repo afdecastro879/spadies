@@ -1,8 +1,8 @@
-# Instalaci髇 de Maven
-A continuaci髇 se presenta el procedimiento para la instalaci髇 de maven en linux CentOS 6.5 y Windows.
+# Instalaci贸n de Maven
+A continuaci贸n se presenta el procedimiento para la instalaci贸n de maven en linux CentOS 6.5 y Windows.
 
 # Linux CentOS 6.5
-Ejecutar por l韓ea de comandos:
+Ejecutar por l铆nea de comandos:
 
 ```
 #!bash
@@ -16,9 +16,9 @@ sudo vi /etc/profile.d/maven.sh                 //Crear un archivo ejecutable de
     PATH=$MAVEN_HOME/bin:$PATH                  //Agregar la variable a PATH
     export PATH MAVEN_HOME                      //Registrar las variables de entorno
     export CLASSPATH=.
-sudo chmod +x /etc/profile.d/maven.sh           //Brindar permisos de ejecuci髇 al archivo
+sudo chmod +x /etc/profile.d/maven.sh           //Brindar permisos de ejecuci贸n al archivo
 sudo source /etc/profile.d/maven.sh             //Ejecutar el bash
-sudo mvn -version                               //Verificar la versi髇 de maven
+sudo mvn -version                               //Verificar la versi贸n de maven
 echo $MAVEN_HOME                                //Verificar las variables de entorno
 echo $PATH
 
@@ -26,6 +26,6 @@ echo $PATH
 
 # Windows
 Descargar el zip de este [enlace](http://maven.apache.org/download.cgi) y descomprimirlo en un directorio conocido, preferiblemente C:/Archivos de Programa/apache-maven-3.3.3.
-Agregar la carpeta `bin` a la variable `PATH` del usuario. Para esto, abrir propiedades del sistema (WinKey+Pause), seleccionar "Configuraci髇 avanzada del sistema", "Variables de entorno", y luego agregar a la variable `PATH` el valor `C:/Archivos de Programa/apache-maven-3.3.3` separado por un ;
+Agregar la carpeta `bin` a la variable `PATH` del usuario. Para esto, abrir propiedades del sistema (WinKey+Pause), seleccionar "Configuraci锟絥 avanzada del sistema", "Variables de entorno", y luego agregar a la variable `PATH` el valor `C:/Archivos de Programa/apache-maven-3.3.3` separado por un ;
 
-Abrir una ventana de comandos (WinKey+R) escribir `cmd` y correr `mvn -v` para verificar la instalaci髇.
+Abrir una ventana de comandos (WinKey+R) escribir `cmd` y correr `mvn -v` para verificar la instalaci贸n.

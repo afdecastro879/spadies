@@ -1,11 +1,11 @@
-# Ambiente Integración continua
-En el presente capítulo encontrará el detalle de la configuración del ambiente de integración contínua para el proyecto SPADIES 3.0.
+# Ambiente IntegraciÃ³n continua
+En el presente capÃ­tulo encontrarÃ¡ el detalle de la configuraciÃ³n del ambiente de integraciÃ³n contÃ­nua para el proyecto SPADIES 3.0.
 
-Este ambiente permite a los desarrolladores realizar tareas automáticas de compilación, empaquetado, ejecución de pruebas, análisis estático de código y despliegue automático en un servidor de pruebas.
+Este ambiente permite a los desarrolladores realizar tareas automÃ¡ticas de compilaciÃ³n, empaquetado, ejecuciÃ³n de pruebas, anÃ¡lisis estÃ¡tico de cÃ³digo y despliegue automÃ¡tico en un servidor de pruebas.
 
 # Contenido
-+ [Instalación de Git](ci/git.md)
-+ [Instalación de Maven](ci/maven.md)
-+ [Instalación de Jenkins](ci/jenkins.md)
++ [InstalaciÃ³n de Git](ci/git.md)
++ [InstalaciÃ³n de Maven](ci/maven.md)
++ [InstalaciÃ³n de Jenkins](ci/jenkins.md)
 + [Enlace Bitbucket - Jenkins](ci/jenkins-bi.md)
-+ [Instalación de Servidor de Sonar](ci/sonar.md)
++ [InstalaciÃ³n de Servidor de Sonar](ci/sonar.md)

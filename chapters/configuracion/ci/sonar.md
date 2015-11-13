@@ -1,13 +1,13 @@
-# Instalaci�n del servidor de SonarQube
+# Instalación del servidor de SonarQube
 
-A continuaci�n se presenta el procedimiento para la instalaci�n de SonarQube en linux CentOS 6.5
+A continuación se presenta el procedimiento para la instalación de SonarQube en linux CentOS 6.5
 
 ## Linux CentOS 6.5
 
-Para la instalaci�n de SonarQube se requiere de una base de datos. Dentro del proceso de integraci�n continua para el proyecto SPADIES se utilizar� una base de datos MySQL para este fin.
+Para la instalación de SonarQube se requiere de una base de datos. Dentro del proceso de integración continua para el proyecto SPADIES se utilizará una base de datos MySQL para este fin.
 
 ### MySQL
-Ejecutar a trav�s de l�nea de comandos:
+Ejecutar a través de línea de comandos:
 
 ```
 #!bash
@@ -21,7 +21,7 @@ passwd sonar                                //Agregar una contrase�a para el u
 ```
 
 ### SonarQube
-Ejecutar a trav�s de l�nea de comandos:
+Ejecutar a través de línea de comandos:
 
 ```
 #!bash
@@ -30,8 +30,8 @@ yum install sonar                           //Instalar sonar a trav�s de yum
 ```
 
 ### Crear Base de datos y usuarios para sonar
-Es necesario generar las bases de datos y el usuario a trav�s del cual se conectar� sonarqube.
-Para esto, se debe ingresar a la consola de mysql a trav�s de:
+Es necesario generar las bases de datos y el usuario a través del cual se conectará sonarqube.
+Para esto, se debe ingresar a la consola de mysql a través de:
 ```
 #!bash
 mysql -u {mysql-user} -p {mysql-password}   // Para este caso particular entrar como root: mysql -u root -p mypassword
@@ -48,14 +48,14 @@ FLUSH PRIVILEGES;
 ```
 
 ### Configuraciones de sonar:
-Una vez creada la Base de datos y el usuario en necesario acceder a la configuraci�n de sonar y agregar estos datos. Por defecto esta configuraci�n est� en `/opt/sonar/conf/conf.properties`
+Una vez creada la Base de datos y el usuario en necesario acceder a la configuración de sonar y agregar estos datos. Por defecto esta configuración está en `/opt/sonar/conf/conf.properties`
 
 ```
 #!bash
 vi /opt/sonar/conf/conf.properties
 ```
 
-Descomentar las l�neas correspondientes. En este caso se tiene en cuenta que la base de datos y el usuario creado son los mismos que vienen por defecto en el archivo de configuraci�n:
+Descomentar las líneas correspondientes. En este caso se tiene en cuenta que la base de datos y el usuario creado son los mismos que vienen por defecto en el archivo de configuración:
 
 ```
 #!bash
@@ -88,13 +88,13 @@ sudo service sonar start
 ```
 
 Una vez iniciado el servicio se deben configurar las opciones de seguridad:
-+ Entrar a trav�s del browser a http://localhost:9000.
-+ Iniciar sesi�n con la cuenta admin con contrase�a admin.
-+ Cambiar la contrase�a entrando a �Administrator� > �My Account�
-+ Desactivar el acceso an�nimo a trav�s de �Settings� > �Configuration� > �Security� seleccionando True en �Force user authentication�
++ Entrar a través del browser a http://localhost:9000.
++ Iniciar sesión con la cuenta admin con contraseña admin.
++ Cambiar la contraseña entrando a Administrator > My Account
++ Desactivar el acceso anónimo a través de Settings > Configuration > Security seleccionando True en Force user authentication
 
-### Instalaci�n de Sonar Runner
-Para enviar un an�lisis de c�digo se requiere del SonarRunner. Para esto:
+### Instalación de Sonar Runner
+Para enviar un análisis de código se requiere del SonarRunner. Para esto:
 
 ```
 #!bash
@@ -106,14 +106,14 @@ sudo ln -s sonar-runner-2.2.2 sonar-runner              //Renombrar el fuente
 //Crear un script para agregar las variables de entorno de sonar-runner al inicio del OS
 sudo echo -e '#!/bin/bash\nexport SONAR_RUNNER_HOME=/opt/sonar-runner\nexport PATH=$PATH:$SONAR_RUNNER_HOME/bin' > /etc/profile.d/sonar-runner.sh
 
-export SONAR_RUNNER_HOME=/opt/sonar-runner              //Exportar las variables de entorno para la sesi�n actual
+export SONAR_RUNNER_HOME=/opt/sonar-runner              //Exportar las variables de entorno para la sesión actual
 export PATH=$PATH:$SONAR_RUNNER_HOME/bin
 
-sonar-runner -v                                         //Probar la correcta instalaci�n del sonnar-runner
+sonar-runner -v                                         //Probar la correcta instalación del sonnar-runner
 ```
 
 ### Sonar con Maven
-Para que sonar pueda ser llamado a trav�s de maven se requiere de agregar un profile a la configuraci�n de Maven:
+Para que sonar pueda ser llamado a través de maven se requiere de agregar un profile a la configuración de Maven:
 
 ```
 #!bash

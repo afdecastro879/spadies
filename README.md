@@ -1,26 +1,34 @@
-# IntroducciÛn
-En esta Wiki encontrar· toda la documentaciÛn relacionada con la reingenierÌa del proyecto SPADIES 3.0. A continuaciÛn podr· ver la instalaciÛn y configuraciÛn de los diferentes ambientes utilizados en el desarrollo del proyecto, el detalle del cÛdigo fuente y los diferentes manuales necesarios para el correcto entendimiento de los artefactos entregados.
+# Introducci√≥n
+En esta Wiki encontrar√° toda la documentaci√≥n relacionada con la reingenier√≠a del proyecto SPADIES 3.0. A continuaci√≥n podr√° ver la instalaci√≥n y configuraci√≥n de los diferentes ambientes utilizados en el desarrollo del proyecto, el detalle del c√≥digo fuente y los diferentes manuales necesarios para el correcto entendimiento de los artefactos entregados.
 
 # Contenido
-1. [InstalaciÛn y ConfiguraciÛn](chapters/install.md)
+1. [Instalaci√≥n y Configuraci√≥n](chapters/install.md)
 	+ [VPN](chapters/configuracion/vpn.md)
 	+ [Servidor Weblogic](chapters/configuracion/wl.md)
 	+ [Base de datos Oracle](chapters/configuracion/odb.md)
-	+ [Ambiente IntegraciÛn continua](chapters/configuracion/ci.md)
-	    + InstalaciÛn de Git
-	    + InstalaciÛn de Maven
-	    + InstalaciÛn de Jenkins
+	+ [OpenLdap](chapters/configuracion/openldap.md)
+	+ [Ambiente Integraci√≥n continua](chapters/configuracion/ci.md)
+	    + Instalaci√≥n de Git
+	    + Instalaci√≥n de Maven
+	    + Instalaci√≥n de Jenkins
 	    + Enlace Bitbucket - Jenkins
-	    + InstalaciÛn de Servidor de Sonar
-	+ [CreaciÛn del proyecto en el ambiente CI](chapters/configuracion/project.md)
+	    + Instalaci√≥n de Servidor de Sonar
+	+ [Creaci√≥n del proyecto en el ambiente CI](chapters/configuracion/project.md)
 	+ [Ambiente de Desarrollo](chapters/configuracion/devenv.md)
-	    + ImportaciÛn del proyecto
-	    + ConfiguraciÛn de Maven para el proyecto
+	    + Importaci√≥n del proyecto
+	    + Configuraci√≥n de Maven para el proyecto
 	    	+ Dependencias
 	    	+ Sonar
 			+ WebLogic
+        + OpenLdap
 	    + Base de datos
-2. CÛdigo Fuente
+    + [Puesta en Producci√≥n](chapters/configuracion/production.md)
+        + Instalaci√≥n del ambiente
+        + Compilaci√≥n
+        + Despliegue
+            + Consola de Administraci√≥n WebLogic
+            + Maven
+2. C√≥digo Fuente
 	+ Java Doc
 3. Manuales
 	+ Usuario

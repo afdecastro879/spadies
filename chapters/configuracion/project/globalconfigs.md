@@ -1,7 +1,7 @@
 # Configuraciones Globales de Jenkins
-A continuaciÛn se presentan todas las configuraciones globales de Jenkins para que funcione como el servidor de integraciÛn contÌna en el proyecto SPADIES 3.0.
+A continuaci√≥n se presentan todas las configuraciones globales de Jenkins para que funcione como el servidor de integraci√≥n cont√≠nua en el proyecto SPADIES 3.0.
 
-## InstalaciÛn de Plugins
+## Instalaci√≥n de Plugins
 La siguiente es la lista de plugins necesaria:
 + Bitbucket Plugin
 + Email Extension Plugin
@@ -9,16 +9,16 @@ La siguiente es la lista de plugins necesaria:
 + Maven Integration Plugin
 + SonarQube Plugin
 
-Para la instalaciÛn de estos plugins es necesario ingresar a Jenkins > Administrar Jenkins > Administrar Plugins
+Para la instalaci√≥n de estos plugins es necesario ingresar a Jenkins > Administrar Jenkins > Administrar Plugins
 
 ![Paso 1](../../../img/project/jenkins_1stp.png)
 
 ![Paso 2](../../../img/project/jenkins_1stp.png)
 
-Seleccionar la pestaÒa Todos los Plugins y a travÈs de la barra de b˙squeda seleccionar los plugins para la instalaciÛn. Dar clic en instalar ahora e instalar despuÈs de reiniciar.
+Seleccionar la pesta√±a Todos los Plugins y a trav√©s de la barra de b√∫squeda seleccionar los plugins para la instalaci√≥n. Dar clic en instalar ahora e instalar despu√©s de reiniciar.
 
 ## Configurar el sistema
-Es necesaria la configuraciÛn de todas las variables de entorno y rutas que utilizar· Jenkins. Para esto, es necesario ingresar a Jenkins > Administrar Jenkins > Configurar Sistema. A continuaciÛn se muestran los valores de la configuraciÛn para cada secciÛn:
+Es necesaria la configuraci√≥n de todas las variables de entorno y rutas que utilizar√° Jenkins. Para esto, es necesario ingresar a Jenkins > Administrar Jenkins > Configurar Sistema. A continuaci√≥n se muestran los valores de la configuraci√≥n para cada secci√≥n:
 
 ### JDK
 

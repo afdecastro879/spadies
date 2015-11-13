@@ -1,9 +1,9 @@
-# Creación del proyecto en el ambiente de Integración Contínua
+# CreaciÃ³n del proyecto en el ambiente de IntegraciÃ³n ContÃ­nua
 
-En el presente capítulo encontrará el detalle de la configuración de un proyecto en Jenkins integrando todas las herramientas antes instaladas.
+En el presente capÃ­tulo encontrarÃ¡ el detalle de la configuraciÃ³n de un proyecto en Jenkins integrando todas las herramientas antes instaladas.
 
-Este proyecto permitirá ejecutar todas las tareas de compilación, empaquetado, ejecución de pruebas, análisis estático de código y despliegue automático en un servidor de pruebas, a través de la utilización de Maven además de notificar a los desarrolladores cualquier error en estos procesos.
+Este proyecto permitirÃ¡ ejecutar todas las tareas de compilaciÃ³n, empaquetado, ejecuciÃ³n de pruebas, anÃ¡lisis estÃ¡tico de cÃ³digo y despliegue automÃ¡tico en un servidor de pruebas, a travÃ©s de la utilizaciÃ³n de Maven ademÃ¡s de notificar a los desarrolladores cualquier error en estos procesos.
 
 # Contenido
 + [Configuraciones Globales de Jenkins](project/globlaconfigs.md)
-+ [Creación de un proyecto Maven](configuracion/mavenproject.md)
++ [CreaciÃ³n de un proyecto Maven](configuracion/mavenproject.md)
