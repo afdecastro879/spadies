@@ -192,6 +192,7 @@ ldapsearch -xLLL -D cn=config -W -b cn=config cn=*spadiesPerson*
 ## Agregar grupos y usuario superadministrador del SPADIES
 
 Copiar los archivos 
+
 + afgrp.ldif 
 + afgrp.ldif
 + sagrp.ldif
@@ -200,6 +201,7 @@ Copiar los archivos
 + ufgrp.ldif
 + upgrp.ldif
 + utgrp.ldif
+
 al directorio temporal `~/tmp`. Vendrán adjuntos a este documento o estarán en la carpeta `chapters/configuracion/openldap` de la wiki.
 
 Ejecutar la siguiente línea para cada archivo del directorio. El archivo superadmin.ldif debe ser el último.
