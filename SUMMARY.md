@@ -1,6 +1,6 @@
 # Summary
 
-* [Introduction](readmemd.md)
+* [Introduction](README.md)
 * [Vista Funcional](chapters/arquitectura/funcional/funcional.md)
 * [Vista de Datos](chapters/arquitectura/datos/datos.md)
 * [Vista de Despliegue](chapters/arquitectura/despliegue/despliegue.md)
