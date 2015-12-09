@@ -15,7 +15,6 @@
 * [Despliegue de la aplicación](chapters/produccion/despliegue/despliegue.md)
 * [Instalación](chapters/integracioncontinua/instalacionci/instalacionci.md)
 * [Configuración](chapters/integracioncontinua/configuracionci/configuracionci.md)
-* [Web](web.md)
 * Core
 * Processor
 * Usuario
