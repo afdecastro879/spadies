@@ -1,4 +1,0 @@
-dn: cn=ufgrp,ou=groups,dc=spadies,dc=mineducacion,dc=gov,dc=co
-objectClass: top
-objectClass: posixGroup
-gidNumber: 5

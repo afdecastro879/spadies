@@ -1,9 +1,0 @@
-dn: uid=spadiesAdmin,ou=people,dc=spadies,dc=mineducacion,dc=gov,dc=co
-objectClass: spadiesPerson
-cn: spadiesAdmin
-uid: spadiesAdmin
-mail: spadies@spadies.mineducacion.gov.co
-rol: sagrp
-sn: spadies
-telefono: 3394949
-cargo: administrador

@@ -1,4 +1,0 @@
-dn: cn=sagrp,ou=groups,dc=spadies,dc=mineducacion,dc=gov,dc=co
-changetype: modify
-add: memberuid
-memberuid: spadiesAdmin
